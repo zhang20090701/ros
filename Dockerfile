@@ -10,7 +10,7 @@ USER root
 # 根据自己需求安装一些linux工具，如ping、tftp
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y iputils-ping tftp lsb-core firefox&& \
+    apt-get install -y firefox&& \
     apt-get clean
     
 # 安装turtlesim功能包
