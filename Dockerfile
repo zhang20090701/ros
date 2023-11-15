@@ -4,7 +4,7 @@ FROM consol/ubuntu-xfce-vnc
 USER 0
 
 # 替换桌面背景（Dockerfile同目录下有图片screen-4.jpg）
-COPY ./screen-4.jpg  /headless/.config/bg_sakuli.png
+
 
 # 编辑sources.list，使用国内软件源
 # 根据自己需求安装一些linux工具，如ping、tftp
