@@ -8,12 +8,9 @@ USER 0
 
 # 编辑sources.list，使用国内软件源
 # 根据自己需求安装一些linux工具，如ping、tftp
-RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
-    sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list && \
-    sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y iputils-ping tftp lsb-core && \
+    apt-get install -y iputils-ping tftp lsb-core firefox&& \
     apt-get clean
     
 # 安装ROS及其编译工具，配置ROS环境
