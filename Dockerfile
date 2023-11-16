@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-USER 0
+USER root
 RUN apt-get update && apt-get install -y x11vnc firefox
 
 # 添加 Cpolar 的内网穿透
