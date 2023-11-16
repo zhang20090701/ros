@@ -2,8 +2,6 @@ version: "3.7"
 
 services:
   vnc:
-    image: ubuntu:latest
-    environment:
-      - VNC_PASSWORD=mypassword
+    build: .
     ports:
       - "5900:5900"
