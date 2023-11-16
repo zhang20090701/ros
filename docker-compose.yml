@@ -1,6 +1,9 @@
-version: "3.9"  # optional since v1.27.0
+version: "3.7"
+
 services:
-  web:
-    build: .
+  vnc:
+    image: vnc-firefox
+    environment:
+      - VNC_PASSWORD=mypassword
     ports:
       - "5900:5900"
